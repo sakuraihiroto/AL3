@@ -53,15 +53,13 @@ class GameScene {
 	// 3Dモデル
 	Model* model_ = nullptr;
 	//ワールドトランスフォーム
-	WorldTransform worldTransform_;
+	WorldTransform worldTransform_[100];
 	//ビュープロジェクション
 	ViewProjection viewProjection_;
-	////サウンドデータハンドル
-	//uint32_t soundDataHandle_ = 0;
-	////音楽再生ハンドル
-	//uint32_t voiceHandle_ = 0;
 	//値を表示したい変数
 	int32_t value_ = 0;
+	//カメラ上方向の角度
+	float viewAngle = 0.0f;
 	/// <summary>
 	/// ゲームシーン用
 	/// </summary>
